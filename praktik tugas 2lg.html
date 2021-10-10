@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <title>Halaman 1</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table border='0' width='37%' cellpadding='2'  cellspacing='2' align='center' bgcolor=white>
+    <h2 style="text-align: center; text-decoration: underline;">FORMULIR PENDAFTARAN LOMBA OSN</h2>
+    <form>
+        <center><img src="osn.jpg" width="250px;" height="120px;"></center><br>
+        <h4 style="text-align: center;">Data Diri</h4>
+        <tr><td>
+            Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; :
+            <input type="text" required placeholder="Nama Lengkap">
+            <br><br>
+            
+            Tempat Lahir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp; : 
+            <input type="text" required placeholder="Tempat Lahir">
+            <br><br>
+
+            Tanggal Lahir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;: <input type="date" required>
+            <br><br>
+            
+            <label for="tilom">Tingkat Lomba&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp; :</label>
+            <input type="radio" name="tilom" required>SMP
+            <input type="radio" name="tilom">SMA
+            <br><br>
+
+            Asal Sekolah&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp; : 
+            <select required>
+                <option value="" disabled selected>Pilih Sekolah</option>
+                <option>SMP Islam Athirah 1 Makassar</option>
+                <option>SMK Telkom Makassar</option>
+                <option>MAN Insan Cendekia Serpong</option>
+                <option>MAN Insan Cendekia Gorontalo</option>
+                <option>SMAK Bogor</option>
+                <option>SMPN 22 Surabaya</option>
+                <option>SMPN 19 Palembang</option>
+                <option>SMP Bruder Pontianak</option>
+                <option>SMPN 1 Ternate</option>
+            </select>
+            <br><br>
+        
+            Kelas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 
+            <select required>
+                <option value="" disabled selected>Pilih Kelas</option>
+                <option>VII</option>
+                <option>VIII</option>
+                <option>IX</option>
+                <option>X</option>
+                <option>XI</option>
+                <option>XII</option>
+                </select>
+                <br><br>
+
+            Nomor HP/WhatsApp&nbsp;&nbsp;&nbsp;&nbsp; : 
+            <input type="text" pattern="[0-9]{8,}" required placeholder="Nomor Handphone">
+            <br><br>
+
+            Alamat&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : 
+            <textarea name="alamat" cols="30" rows="3" required placeholder="Alamat Lengkap"></textarea>
+            <br><br>
+            
+            Foto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:
+            <input type="file" id="foto" name="foto" style="display: none;"
+            onchange="document.getElementById('filename').value=this.value">
+            <input type="text" id="filename" placeholder="Pilih Foto">
+            <input type="button" value="Browse"
+            onclick="document.getElementById('foto').click()">
+            <br><br>
+
+            <nav style="text-align: right">
+                <button style="width: 80px; height: 22px;" onclick="location.href='praktik tugas 2.3.html'">Next</button>
+            </nav>
+        </td></tr>
+    </form>
+</body>
